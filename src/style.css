@@ -61,10 +61,12 @@ footer {
     font-size: 2.6rem;
 }
 
-.img__cart {
+.header__cart {
     width: 40px;
     height: 40px;
     cursor: pointer;
+    background: url(./assets/pngwing.com.png);
+    background-size: contain;
 }
 .wrapper_footer{
     height: 100%;

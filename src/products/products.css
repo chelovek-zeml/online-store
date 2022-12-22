@@ -1,0 +1,10 @@
+.block__product {
+    display: flex;
+    flex-wrap: wrap;
+    width: 78%;
+    height: auto;
+    margin: 10px;
+    background: rgb(164, 100, 3);
+    border: 2px solid rgb(76, 45, 4);
+    border-radius: 15px;
+}
