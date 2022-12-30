@@ -29,6 +29,11 @@ header {
 }
 
 main {
+    width: auto;
+    min-height: calc(100vh - 120px);
+}
+
+#main-page {
     display: flex;
     width: auto;
     height: auto;
