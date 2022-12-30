@@ -1,3 +1,5 @@
 import './style.css';
-import './filter/filter';
-import './products/products';
+import App from './pages/app';
+
+const app = new App();
+app.run();

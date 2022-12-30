@@ -1,15 +1,11 @@
 .block__filter {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 20%;
     height: 800px;
     margin: 10px;
     background: rgb(164, 100, 3);
     border: 2px solid rgb(76, 45, 4);
     border-radius: 15px;
-}
-
-.filter__name {
-    font-size: 1.2rem;
-    margin-top: 10px;
 }

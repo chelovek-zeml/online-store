@@ -1,14 +1,14 @@
 import './filter.css'
+import { filterButton } from './filter-button/filter-button';
 
-let main = document.querySelector('main');
-
-function component() {
+function blockFilter() {
     const element = document.createElement('div');
     // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = '<p class="filter__name">FILTER</p>';
     element.className = 'block__filter';
+    element.innerHTML = filterButton();
   
     return element;
   }
-  
-  main?.appendChild(component());
+
+  export default blockFilter();
+ 

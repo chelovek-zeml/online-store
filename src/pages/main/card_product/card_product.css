@@ -19,9 +19,9 @@
 
 .card__text {
     width: 180px;
-    height: 130px;
+    height: 120px;
     margin: 8px;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
 .card__info {
@@ -29,7 +29,7 @@
 }
 
 .info__name {
-    width: 40px;
+    width: 50px;
     margin-right: 10px;
 }
 
