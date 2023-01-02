@@ -71,8 +71,15 @@ footer {
     height: 40px;
     cursor: pointer;
     background: url(./assets/pngwing.com.png);
-    background-size: contain;
+    background-size: contain;  
 }
+
+#count__cart {
+    font-size: 2rem;
+    color: bisque;
+}
+
+
 .wrapper_footer{
     height: 100%;
     margin-left: 40px;

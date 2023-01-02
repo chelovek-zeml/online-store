@@ -1,14 +1,15 @@
 import Page from "../../core/templates/page";
-import blockCard from "./block-card/block-card";
+import BlockDetails from "../../components/blocks/blockDetails";
 
 class CardPage extends Page{ 
+    blockDetails = new BlockDetails("details", 'product__details');
 
     constructor(id: string) {
         super(id);
     }
     
     render() {
-        this.container.appendChild(blockCard);  
+        this.container.append(this.blockDetails.render());  
         return this.container;
     }
 }
