@@ -1,5 +1,13 @@
-.block__card {
-  display: flex;
+#details-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  
+.product__details {
+    display: flex;
   align-items: center;
   justify-content: center;
   width: 70%;
@@ -8,13 +16,4 @@
   background: rgb(164, 100, 3);
   border: 2px solid rgb(76, 45, 4);
   border-radius: 15px;
-}
-
-
-#details-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
 }
