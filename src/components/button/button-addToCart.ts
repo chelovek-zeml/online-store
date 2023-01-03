@@ -8,8 +8,14 @@ class ButtonAddToCart extends Button {
   constructor(id: string, className: string, name: string) {
     super(id, className, name);
     this.container.addEventListener('click', this.click);
-    let arrProduct: object[] = [];
-    localStorage.setItem('arrProduct', `${JSON.stringify(arrProduct)}`);
+    let arrProduct: object[];
+    if (localStorage.getItem('arrProduct') !== null) {
+      arrProduct = JSON.parse(localStorage.getItem('arrProduct')!);
+    } else {
+     arrProduct = [];
+      localStorage.setItem('arrProduct', `${JSON.stringify(arrProduct)}`);
+    }
+    
   }
 
   render() {
@@ -18,42 +24,31 @@ class ButtonAddToCart extends Button {
 
   click() {
     let textButton = document.getElementById(`${this.id}`);
-
     if (textButton?.textContent === 'Add to Cart') {
-      ButtonAddToCart.countStock(true);
-      ButtonAddToCart.countPrice(this.id, true);
       ButtonAddToCart.creatArrCart(this.id, true);
       textButton.textContent = 'Drop from Cart';
     } else if (textButton?.textContent === 'Drop from Cart') {
-      ButtonAddToCart.countStock(false);
-      ButtonAddToCart.countPrice(this.id, false);
       ButtonAddToCart.creatArrCart(this.id, false);
       textButton.textContent = 'Add to Cart';
     }
+    ButtonAddToCart.countStock();
+    ButtonAddToCart.countPrice();
   }
 
-  static countStock(flag: boolean) {
+  static countStock() {
     let countCart = document.getElementById('count__cart')!;
-    let count = Number(countCart?.textContent);
-    if (flag) {
-      count++;
-    } else {
-      count--;
-    }
-
+    let count = JSON.parse(localStorage.getItem('arrProduct')!).length;
     return (countCart.textContent = count.toString());
   }
 
-  static countPrice(data: number, flag: boolean) {
-    let price = document.getElementById('allPrice');
-    let result = Number(price?.textContent);
-    if (flag) {
-      result! += Number(products[data - 1].price);
-    } else {
-      result! -= Number(products[data - 1].price);
+  static countPrice() {
+    let priceFeild = document.getElementById('allPrice');
+    let result:number = 0;
+    let arrTemp = JSON.parse(localStorage.getItem('arrProduct')!);
+    for(let i = 0; i < arrTemp.length; i++) {
+      result += Number(arrTemp[i].price);
     }
-
-    return (price!.textContent = result?.toString());
+    return (priceFeild!.textContent = result?.toString());
   }
 
   static creatArrCart(i: number, flag: boolean) {
