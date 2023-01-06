@@ -1,14 +1,16 @@
-abstract class Block {
-  protected container: HTMLElement;
 
+class NumberStockProduct {
+  protected container: HTMLElement;
   constructor(id: string, className: string) {
     this.container = document.createElement('div');
     this.container.id = id;
     this.container.className = className;
   }
 
-  render(i?: number, num?: number, str?: string) {
+  render() {
+    let number = 1;
+    this.container.innerText = `${number}`;
     return this.container;
   }
 }
-export default Block;
+export default NumberStockProduct;

@@ -25,7 +25,7 @@ header {
     margin-right: 10px;
     background: rgb(164, 100, 3);
     border: 2px solid rgb(76, 45, 4);
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 0px 0px 70px 70px;
 }
 
 main {
@@ -48,7 +48,7 @@ footer {
     margin-right: 10px;
     background: rgb(164, 100, 3);
     border: 2px solid rgb(45, 27, 3);
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 70px 70px 0px 0px;
 }
 
 .wrapper_header {
@@ -110,5 +110,13 @@ footer {
     background-image: url(./assets/rs_school_js.svg);
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+button {
+    width: 80px;
+    height: 40px;
+    background: rgb(173, 133, 75);
+    border-radius: 10px;
+    cursor: pointer;
 }
 

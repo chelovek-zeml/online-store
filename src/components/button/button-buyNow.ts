@@ -1,6 +1,6 @@
 import Button from "../../core/templates/button";
 
-class ButtonDetail extends Button {
+class ButtonBuyNow extends Button {
 
     constructor(id:string, className: string, name: string) {
         super(id, className, name);
@@ -11,4 +11,4 @@ class ButtonDetail extends Button {
     }
 
 }
-export default ButtonDetail;
+export default ButtonBuyNow;
