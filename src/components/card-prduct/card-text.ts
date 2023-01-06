@@ -1,4 +1,3 @@
-import './card-text.css';
 import products from '../../data.json';
 
 class CardText {
@@ -28,6 +27,15 @@ class CardText {
     }
     if (name === 'rating') {
       return `<h4 class='info__name'>${name}: </h4><p>${products[i].rating}</p>`;
+    }
+    if (name === 'description') {
+      return `<h4 class='info__name'>${name}: </h4><p>${products[i].description}</p>`;
+    }
+    if (name === 'title') {
+      return `<h4 class='info__name'>${name}: </h4><p>${products[i].title}</p>`;
+    }
+    if (name === 'discountPercentage') {
+      return `<h4 class='info__name'>${name}: </h4><p>${products[i].discountPercentage}</p>`;
     }
     return `<h4 class='info__name'>${name}: </h4><p> - </p>`;
   }

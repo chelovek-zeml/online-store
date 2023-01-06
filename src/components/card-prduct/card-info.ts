@@ -1,4 +1,3 @@
-import './card-info.css';
 import Block from '../../core/templates/block';
 import CardText from './card-text';
 

@@ -42,7 +42,10 @@ class App {
     }
 
     run() {
-        const hash = window.location.hash.slice(1);
+        let hash = window.location.hash.slice(1);
+        if (hash === '') {
+            hash = 'main-page';
+        }
        App.rendorNewPage(hash);
        this.enableRouteChange();
     }

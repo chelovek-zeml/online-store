@@ -1,4 +1,3 @@
-import './card-img.css';
 import products from '../../data.json';
 
 class CardImg {

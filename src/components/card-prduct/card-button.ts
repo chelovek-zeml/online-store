@@ -1,4 +1,3 @@
-import './card-button.css';
 import Block from '../../core/templates/block';
 import ButtonAddToCart from '../button/button-addToCart';
 import ButtonDetail from '../button/button-detail';
@@ -22,7 +21,13 @@ class CardButton extends Block {
       }
 
       static checkConditionButton(i:number) {
-        let arrTemp = JSON.parse(localStorage.getItem('arrProduct')!);
+        let arrTemp;
+        if (localStorage.length === 0) {
+           arrTemp = 0;
+        } else {
+          arrTemp = JSON.parse(localStorage.getItem('arrProduct')!);
+        }
+         
         let result = 'Add to Cart';
         if(arrTemp.length > 0) {
         for(let j = 0; j < arrTemp.length; j++) {

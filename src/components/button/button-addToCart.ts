@@ -1,5 +1,4 @@
 import Button from '../../core/templates/button';
-import './button-addToCart.css';
 import products from '../../data.json';
 
 class ButtonAddToCart extends Button {
@@ -37,7 +36,12 @@ class ButtonAddToCart extends Button {
 
   static countStock() {
     let countCart = document.getElementById('count__cart')!;
-    let count = JSON.parse(localStorage.getItem('arrProduct')!).length;
+    let count;
+    if (localStorage.length === 0) {
+      countCart.textContent = '0';
+    } else {
+    count = JSON.parse(localStorage.getItem('arrProduct')!).length;
+    }
     return (countCart.textContent = count.toString());
   }
 

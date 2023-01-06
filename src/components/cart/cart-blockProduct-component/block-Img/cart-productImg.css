@@ -1,0 +1,9 @@
+.cart__img {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    margin: 5px;
+    font-size: 3.0rem;
+}
+
