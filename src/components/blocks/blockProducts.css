@@ -1,10 +1,17 @@
 .block__product {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     width: 78%;
     height: auto;
     margin: 10px;
     background: rgb(164, 100, 3);
     border: 2px solid rgb(76, 45, 4);
     border-radius: 24px;
+}
+
+@media (max-width: 900px) {
+    .block__product {
+        width: 90%;
+    }
 }

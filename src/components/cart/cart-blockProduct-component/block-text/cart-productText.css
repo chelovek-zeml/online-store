@@ -36,3 +36,24 @@
     background: black;
 }
 
+@media (max-width:900px) {
+
+    .cart__text {
+        width: 90%;
+    }
+
+    .rating__discount {
+        height: 15px;
+        font-size: 1.4;
+    }
+
+    .title__line {
+        width: 80%;
+    }
+}
+
+@media (max-width:480px) {
+    .rating__discount {
+        font-size: 1.2;
+    }
+}

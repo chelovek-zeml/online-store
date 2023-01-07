@@ -40,3 +40,12 @@
     margin: 20px 0;
     color: rgb(247, 3, 3);
 }
+
+@media (max-width:900px) {
+
+    .cart__price {
+        width: 90%;
+        height: 300px;
+        margin: 10px;
+    }
+}
