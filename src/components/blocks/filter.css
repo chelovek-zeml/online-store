@@ -1,0 +1,45 @@
+.filter__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 800px;
+    margin: 10px;
+    background: rgb(164, 100, 3);
+    border: 2px solid rgb(76, 45, 4);
+    border-radius: 15px;
+}
+
+.filter__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+}
+
+.button__filter {
+    width: 120px;
+}
+
+.category-brand {
+    width: 96%;
+    height: 220px;
+    background: rgb(248, 235, 159);
+    border: 2px solid rgb(76, 45, 4);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.category-brand_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background: rgb(173, 133, 75);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(76, 45, 4);
+    font-size: 1.8rem;
+}
