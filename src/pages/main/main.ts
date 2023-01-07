@@ -1,5 +1,5 @@
 import Page from '../../core/templates/page';
-import blockFilter from './filter/filter';
+import BlockFilter from '../../components/blocks/filter';
 import BlockProducts from '../../components/blocks/blockProducts';
 
 class MainPage extends Page {
@@ -10,7 +10,7 @@ class MainPage extends Page {
   }
 
   render() {
-    this.container.appendChild(blockFilter);
+    this.container.appendChild((new BlockFilter('filter_block', 'filter__block').render()));
     this.container.append(this.blockProducts.render())
     return this.container;
   }
