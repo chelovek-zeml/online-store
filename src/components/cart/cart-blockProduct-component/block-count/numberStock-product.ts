@@ -1,3 +1,4 @@
+import products from '../../../../data.json';
 
 class NumberStockProduct {
   protected container: HTMLElement;
@@ -7,9 +8,26 @@ class NumberStockProduct {
     this.container.className = className;
   }
 
-  render() {
-    let number = 1;
-    this.container.innerText = `${number}`;
+  render(i:number) {
+    let arrProduct: {
+      id: number;
+      count: number;
+      title: string;
+      description: string;
+      price: number;
+      discountPercentage: number;
+      rating: number;
+      stock: number;
+      brand: string;
+      category: string;
+      thumbnail: string;
+      images: string[];
+    }[] = JSON.parse(localStorage.getItem('arrProduct')!);
+    for(let j = 0; j < arrProduct.length; j++) {
+      if (arrProduct[j].id === i) {
+        this.container.innerText = `${arrProduct[j].count}`;
+      }
+    }
     return this.container;
   }
 }

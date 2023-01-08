@@ -10,16 +10,16 @@ class CartProductCount extends Block {
   }
   render(i: number) {
     this.container.append(
-      new StockProduct('id_product_stock', 'product__stock').render(i)
+      new StockProduct(`${i}_product_stock`, 'product__stock').render(i)
     );
     this.container.append(
       new BlockIncreaseDecreaseProduct(
-        'id_increase__decrease',
+      `${i}_increase__decrease`,
         'increase__decrease'
-      ).render()
+      ).render(i)
     );
     this.container.append(
-      new PriceProductItem('id_product_price', 'product__price').render(i)
+      new PriceProductItem(`${i}_product_price`, 'product__price').render(i)
     );
     return this.container;
   }

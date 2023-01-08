@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "count": 1,
         "title": "iPhone 9",
         "description": "An apple mobile which is nothing like apple",
         "price": 549,
@@ -20,6 +21,7 @@
         },
         {
         "id": 2,
+        "count": 1,
         "title": "iPhone X",
         "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
         "price": 899,
@@ -38,6 +40,7 @@
         },
         {
         "id": 3,
+        "count": 1,
         "title": "Samsung Universe 9",
         "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
         "price": 1249,
@@ -53,6 +56,7 @@
         },
         {
         "id": 4,
+        "count": 1,
         "title": "OPPOF19",
         "description": "OPPO F19 is officially announced on April 2021.",
         "price": 280,
@@ -72,6 +76,7 @@
         },
         {
         "id": 5,
+        "count": 1,
         "title": "Huawei P30",
         "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
         "price": 499,
@@ -89,6 +94,7 @@
         },
         {
         "id": 6,
+        "count": 1,
         "title": "MacBook Pro",
         "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
         "price": 1749,
@@ -107,6 +113,7 @@
         },
         {
         "id": 7,
+        "count": 1,
         "title": "Samsung Galaxy Book",
         "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
         "price": 1499,
@@ -125,6 +132,7 @@
         },
         {
         "id": 8,
+        "count": 1,
         "title": "Microsoft Surface Laptop 4",
         "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
         "price": 1499,
@@ -144,6 +152,7 @@
         },
         {
         "id": 9,
+        "count": 1,
         "title": "Infinix INBOOK",
         "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
         "price": 1099,
@@ -163,6 +172,7 @@
         },
         {
         "id": 10,
+        "count": 1,
         "title": "HP Pavilion 15-DK1056WM",
         "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
         "price": 1099,
@@ -181,6 +191,7 @@
         },
         {
             "id": 11,
+            "count": 1,
             "title": "Leather Straps Wristwatch",
             "description": "Style:Sport ,Clasp:Buckles ,Water Resistance Depth:3Bar",
             "price": 120,
@@ -198,6 +209,7 @@
             },
             {
             "id": 12,
+            "count": 1,
             "title": "Waterproof Leather Brand Watch",
             "description": "Watch Crown With Environmental IPS Bronze Electroplating; Display system of 12 hours",
             "price": 46,
@@ -214,6 +226,7 @@
             },
             {
             "id": 13,
+            "count": 1,
             "title": "Royal Blue Premium Watch",
             "description": "Men Silver Chain Royal Blue Premium Watch Latest Analog Watch",
             "price": 50,
@@ -232,6 +245,7 @@
             },
             {
             "id": 14,
+            "count": 1,
             "title": "Leather Strap Skeleton Watch",
             "description": "Leather Strap Skeleton Watch for Men - Stylish and Latest Design",
             "price": 46,
@@ -250,6 +264,7 @@
             },
             {
             "id": 15,
+            "count": 1,
             "title": "Stainless Steel Wrist Watch",
             "description": "Stylish Watch For Man (Luxury) Classy Men's Stainless Steel Wrist Watch - Box Packed",
             "price": 47,
@@ -269,6 +284,7 @@
             },
             {
             "id": 16,
+            "count": 1,
             "title": "Steel Analog Couple Watches",
             "description": "Elegant design, Stylish ,Unique & Trendy,Comfortable wear",
             "price": 35,
@@ -288,6 +304,7 @@
             },
             {
             "id": 17,
+            "count": 1,
             "title": "Fashion Magnetic Wrist Watch",
             "description": "Buy this awesome  The product is originally manufactured by the company and it's a top selling product with a very reasonable",
             "price": 60,
@@ -307,6 +324,7 @@
             },
             {
             "id": 18,
+            "count": 1,
             "title": "Stylish Luxury Digital Watch",
             "description": "Stylish Luxury Digital Watch For Girls / Women - Led Smart Ladies Watches For Girls",
             "price": 57,
@@ -323,6 +341,7 @@
             },
             {
             "id": 19,
+            "count": 1,
             "title": "Golden Watch Pearls Bracelet Watch",
             "description": "Product details of Golden Watch Pearls Bracelet Watch For Girls - Golden Chain Ladies Bracelate Watch for Women",
             "price": 47,
@@ -342,6 +361,7 @@
             },
             {
             "id": 20,
+            "count": 1,
             "title": "Stainless Steel Women",
             "description": "Fashion Skmei 1830 Shell Dial Stainless Steel Women Wrist Watch Lady Bracelet Watch Quartz Watches Ladies",
             "price": 35,

@@ -10,7 +10,7 @@ class PriceSummary {
     let result: number = 0;
     let arrTemp = JSON.parse(localStorage.getItem('arrProduct')!);
     for (let i = 0; i < arrTemp.length; i++) {
-      result += Number(arrTemp[i].price);
+      result += (Number(arrTemp[i].price) * arrTemp[i].count);
     }
     this.container.innerText = `$ ${result}`;
     return this.container;

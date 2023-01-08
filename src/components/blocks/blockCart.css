@@ -11,6 +11,14 @@
     border-radius: 40px;
 }
 
+#cart-page {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+
 .cart_block_product {
     display: flex;
     width: 100%;
@@ -39,6 +47,11 @@
     .cart__page {
         width: 90%;
     }
+
+    #cart-page {
+        flex-direction: column;
+        align-items: center;
+      }
 
     .cart_block_product {
         flex-direction: column;

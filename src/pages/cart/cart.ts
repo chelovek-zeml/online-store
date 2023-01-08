@@ -1,5 +1,4 @@
 import Page from "../../core/templates/page";
-import './cart.css';
 import BlockCart from "../../components/blocks/blockCart";
 import BlockCartSummary from "../../components/blocks/blockCartSummary";
 

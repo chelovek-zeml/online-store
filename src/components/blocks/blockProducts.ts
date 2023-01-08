@@ -1,6 +1,7 @@
 import './blockProducts.css';
 import Block from '../../core/templates/block';
 import Card from '../card-prduct/cardProduct';
+import products from '../../data.json';
 
 class BlockProducts extends Block {
    
@@ -9,7 +10,7 @@ class BlockProducts extends Block {
   }
 
   render(): HTMLElement {
-      for(let i = 0; i < 20; i++) {
+      for(let i = 0; i < products.length; i++) {
         this.container.append((new Card(`${(i + 1) + 'a'}`, 'card__product')).render(i));
       }
     return this.container;

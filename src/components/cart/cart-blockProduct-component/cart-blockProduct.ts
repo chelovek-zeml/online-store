@@ -13,8 +13,8 @@ class CartBlockProduct extends Block {
   }
 
   render(i: number, num: number): HTMLElement {
-    this.container.append(this.productImg.render(i, num));
-    this.container.append(this.cartText.render(i));
+    this.container.append(this.productImg.render(i - 1, num));
+    this.container.append(this.cartText.render(i - 1));
     this.container.append(this.cartCount.render(i));
 
     return this.container;
