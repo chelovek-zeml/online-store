@@ -12,6 +12,13 @@
 
 @media (max-width: 900px) {
     .block__product {
-        width: 90%;
+        width: 70%;
+    }
+}
+
+@media (max-width:640px) {
+
+    .block__product {
+        width: 95%;
     }
 }

@@ -67,3 +67,23 @@
     gap: 8px;
     align-items: center;
 }
+
+@media (max-width: 900px) {
+    .filter__block {
+        width: 30%;
+    }
+}
+
+@media (max-width:640px) {
+
+    .filter__block {
+        width: 50%;
+    }
+}
+
+@media (max-width:480px) {
+
+    .filter__block {
+        width: 70%;
+    }
+}
