@@ -3,15 +3,15 @@ import Block from '../../core/templates/block';
 import Card from '../card-prduct/cardProduct';
 
 class BlockProducts extends Block {
-   
+
   constructor(id: string, className: string) {
     super(id, className);
   }
 
   render(): HTMLElement {
-      for(let i = 0; i < 20; i++) {
-        this.container.append((new Card(`${(i + 1) + 'a'}`, 'card__product')).render(i));
-      }
+    for (let i = 0; i < 20; i++) {
+      this.container.append((new Card(`${(i + 1) + 'a'}`, 'card__product')).render(i));
+    }
     return this.container;
   }
 

@@ -3,11 +3,11 @@
     flex-direction: column;
     align-items: center;
     width: 20%;
-    height: 800px;
     margin: 10px;
     background: rgb(164, 100, 3);
     border: 2px solid rgb(76, 45, 4);
     border-radius: 15px;
+    gap: 15px;
 }
 
 .filter__button {
@@ -24,14 +24,16 @@
 
 .category-brand {
     width: 96%;
-    height: 220px;
+    /*height: 220px;*/
     background: rgb(248, 235, 159);
     border: 2px solid rgb(76, 45, 4);
     border-radius: 10px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .category-brand_name {
+    width: 100%;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,4 +44,24 @@
     border-bottom-style: solid;
     border-bottom-color: rgb(76, 45, 4);
     font-size: 1.8rem;
+    border-radius: 10px;
+}
+
+.category_choice {
+    padding: 8px;
+    font-size: 1.4rem;
+    height: 190px;
+    overflow: auto;
+}
+
+.filter__item-category-brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter__wrapper-checkbox {
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }

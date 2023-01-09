@@ -1,12 +1,16 @@
 export class FilterBlockItem {
     elementWrapper
+    checkboxWrapper //
     checkbox
     constructor(name: string, count: number, id: string) {
         this.elementWrapper = document.createElement('div')
+        this.elementWrapper.className = 'filter__item-category-brand'
         const checkBoxId = id
 
-        this.checkbox = document.createElement('input')
+        this.checkboxWrapper = document.createElement('div')//
+        this.checkboxWrapper.className = 'filter__wrapper-checkbox';  //
 
+        this.checkbox = document.createElement('input')
 
         this.checkbox.type = 'checkbox'
         this.checkbox.id = id
@@ -18,8 +22,9 @@ export class FilterBlockItem {
         const countElement = document.createElement('div')
         countElement.textContent = `(${count}/${count})`
 
+        this.checkboxWrapper.append(this.checkbox, text)
+        this.elementWrapper.append(this.checkboxWrapper, countElement)
 
-        this.elementWrapper.append(this.checkbox, text, countElement)
 
         const onClick = (e: Event) => {
             const { checked } = e.target as HTMLInputElement
