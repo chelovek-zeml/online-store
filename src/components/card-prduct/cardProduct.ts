@@ -7,8 +7,8 @@ import CardButton from './card-button';
 
 class Card extends Block {
 
-  constructor(id: string, className: string) {
-    super(id, className);
+  constructor(id: string, className: string, category: string) {
+    super(id, className, category);
   }
 
   render(i: number): HTMLElement {

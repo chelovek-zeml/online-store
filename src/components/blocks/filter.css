@@ -44,7 +44,9 @@
     border-bottom-style: solid;
     border-bottom-color: rgb(76, 45, 4);
     font-size: 1.8rem;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .category_choice {
