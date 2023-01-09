@@ -85,3 +85,73 @@
   font-weight: 800;
   color:blanchedalmond
 }
+
+@media (max-width: 900px) {
+  .product__details {
+    flex-direction: column;
+    font-size: 2rem;
+  }
+
+  .details__block__img {
+    width: 90%;
+    height: 36%;
+  }
+
+  .details__block__text {
+    width: 90%;
+    height: 40%; 
+  }
+
+  .details__img {
+    width: 100%;
+    height: 34vh;
+  }
+
+  .details__title {
+    width: 100%;
+    margin: 6px 0;
+  }
+  
+  .details__description {
+    font-size: 1.2rem;
+    margin: 4px 0;
+  }
+  
+  .line__details {
+    width: 100%;
+    height: 1px;
+    margin: 4px 0;
+    background: black;
+  }
+  
+  .discount__product {
+    margin: 4px 0;
+    font-size: 1.4rem;
+  }
+  
+  .rating__product {
+    margin: 4px 0;
+    font-size: 1.4rem;
+  }
+  .stock__product {
+    margin: 4px 0;
+    font-size: 1.4rem;
+  }
+  
+  .brand__product {
+    margin: 4px 0;
+    font-size: 1.6rem;
+  }
+  
+  .price__product {
+    margin: 4px 0;
+    font-size: 2.0rem;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 480px) {
+  .details__img {
+    height: 22vh;
+  }
+}
