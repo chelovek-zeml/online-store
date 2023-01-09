@@ -4,7 +4,7 @@ import Card from '../card-prduct/cardProduct';
 import products from '../../data.json';
 
 class BlockProducts extends Block {
-   
+
   constructor(id: string, className: string) {
     super(id, className);
   }

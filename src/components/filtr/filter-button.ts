@@ -3,16 +3,6 @@ import ButtonResetFilter from '../button/button-resetFilter';
 import ButtonCopyLink from '../button/button-copyLink';
 
 
-
-/*export function filterButton() {
-    let result = `<div class='filter_button'>
-    <button class='filter_reset'>Reset Fiflter</button>
-    <button class='filter_copylink'>Copy Link</button>
-    </div>`;
-    //return result + category() + brand() + filterPrice() + filterStock();
-}*/
-
-
 class FilterButton extends Block {
     constructor(id: string, className: string) {
         super(id, className)
