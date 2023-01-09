@@ -7,7 +7,11 @@ class CountSummary {
     }
   
     render() {
-        let countSummary = JSON.parse(localStorage.getItem('arrProduct')!).length;
+        let countSummary: number = 0;
+        let arrTemp = JSON.parse(localStorage.getItem('arrProduct')!);
+        for (let i = 0; i < arrTemp.length; i++) {
+          countSummary += arrTemp[i].count;
+        }
         this.container.innerText = `Products: ${countSummary}`;
       return this.container;
     }

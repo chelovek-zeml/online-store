@@ -19,10 +19,7 @@ class BlockCart extends Block {
     this.container.append(this.cartBlockName.render('Products in Cart'));
     for (let i = 0; i < arrTemp.length; i++) {
       this.container.append(
-        new CartBlockProduct(`${i + 1 + 'p'}`, 'cart_block_product').render(
-          Number(arrTemp[i].id) - 1,
-          i
-        )
+        new CartBlockProduct(`${arrTemp[i].id + 'p'}`, 'cart_block_product').render(Number(arrTemp[i].id), i)
       );
     }
 

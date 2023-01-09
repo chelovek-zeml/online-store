@@ -4,7 +4,6 @@ import ButtonDetail from '../button/button-detail';
 import products from '../../data.json';
 
 class CardButton extends Block {
-    buttonDetail = new ButtonDetail('id_btn_detail', 'btn_detail', 'Details');
 
     constructor(id: string, className: string) {
         super(id, className);
@@ -14,7 +13,7 @@ class CardButton extends Block {
         const element = document.createElement('a');
         let btnText = CardButton.checkConditionButton(i + 1);
         element.href = '#details-page';
-        element.append(this.buttonDetail.render());
+        element.append((new ButtonDetail(`${products[i].id}_btn_detail`, 'btn_detail', 'Details')).render());
         this.container.append((new ButtonAddToCart(`${products[i].id}`, 'add__cart', `${btnText}`)).render());
         this.container.append(element);
         return this.container;

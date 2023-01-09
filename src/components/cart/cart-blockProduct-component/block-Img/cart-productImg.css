@@ -7,3 +7,9 @@
     font-size: 3.0rem;
 }
 
+@media (max-width: 900px) {
+    .cart__img {
+        width: 90%;
+        justify-content: center;
+    }
+}

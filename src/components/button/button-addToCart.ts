@@ -36,11 +36,10 @@ class ButtonAddToCart extends Button {
 
   static countStock() {
     let countCart = document.getElementById('count__cart')!;
-    let count;
-    if (localStorage.length === 0) {
-      countCart.textContent = '0';
-    } else {
-    count = JSON.parse(localStorage.getItem('arrProduct')!).length;
+    let count: number = 0;
+    let arrTemp = JSON.parse(localStorage.getItem('arrProduct')!);
+    for (let i = 0; i < arrTemp.length; i++) {
+      count += arrTemp[i].count;
     }
     return (countCart.textContent = count.toString());
   }
@@ -50,7 +49,7 @@ class ButtonAddToCart extends Button {
     let result:number = 0;
     let arrTemp = JSON.parse(localStorage.getItem('arrProduct')!);
     for(let i = 0; i < arrTemp.length; i++) {
-      result += Number(arrTemp[i].price);
+      result += (Number(arrTemp[i].price) * arrTemp[i].count);
     }
     return (priceFeild!.textContent = result?.toString());
   }
@@ -58,6 +57,7 @@ class ButtonAddToCart extends Button {
   static creatArrCart(i: number, flag: boolean) {
     let arrProduct: {
       id: number;
+      count: number;
       title: string;
       description: string;
       price: number;

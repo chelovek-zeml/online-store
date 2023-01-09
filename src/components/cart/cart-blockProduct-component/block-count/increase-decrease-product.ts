@@ -6,22 +6,22 @@ class BlockIncreaseDecreaseProduct extends Block {
   constructor(id: string, className: string) {
     super(id, className);
   }
-  render() {
+  render(i:number) {
     this.container.append(
       new IncreaseDeacreaseProduct(
-        'id_increase_product',
+        `${i}_product_increase`,
         'increase__product'
       ).render('+')
     );
     this.container.append(
       new NumberStockProduct(
-        'id_number_stock_product',
+        `${i}_number_stock_product`,
         'number__stock__product'
-      ).render()
+      ).render(i)
     );
     this.container.append(
       new IncreaseDeacreaseProduct(
-        'id_decrease_product',
+        `${i}_product_decrease`,
         'decrease__product'
       ).render('-')
     );
