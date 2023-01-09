@@ -1,3 +1,6 @@
+import BlockProducts from "../../blocks/blockProducts"
+
+
 export class FilterBlockItem {
     elementWrapper
     checkboxWrapper //
@@ -28,8 +31,8 @@ export class FilterBlockItem {
 
         const onClick = (e: Event) => {
             const { checked } = e.target as HTMLInputElement
-            sessionStorage.setItem(name, String(checked))
-
+            localStorage.setItem(name, String(checked))
+            BlockProducts.filter();
         }
 
         this.checkbox.addEventListener('click', onClick)

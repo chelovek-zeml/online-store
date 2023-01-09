@@ -10,10 +10,20 @@ class BlockProducts extends Block {
   }
 
   render(): HTMLElement {
-      for(let i = 0; i < products.length; i++) {
-        this.container.append((new Card(`${(i + 1) + 'a'}`, 'card__product')).render(i));
-      }
+    for (let i = 0; i < products.length; i++) {
+      this.container.append((new Card(`${(i + 1) + 'a'}`, 'card__product', products.find((p) => p.id === (i + 1))!.category)).render(i));
+    }
     return this.container;
+  }
+
+  static filter(): void {
+    for (const card of document.querySelectorAll('.card__product')) {
+      let show = true;
+
+      const category = (card as HTMLElement).dataset.category;
+
+      card.setAttribute('style', `display:${show ? 'flex' : 'none'}`)
+    }
   }
 
 }
