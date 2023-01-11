@@ -17,10 +17,19 @@ class BlockProducts extends Block {
   }
 
   static filter(): void {
-    for (const card of document.querySelectorAll('.card__product')) {
-      let show = true;
 
+    const LS_categories = JSON.parse(localStorage.getItem('categories') || '[]');
+    console.log(LS_categories);
+    for (const card of document.querySelectorAll('.card__product')) {
+
+      let show = true
       const category = (card as HTMLElement).dataset.category;
+
+      if (LS_categories.length) {
+        show = false
+        if (LS_categories.includes(category)) show = true
+      }
+
 
       card.setAttribute('style', `display:${show ? 'flex' : 'none'}`)
     }

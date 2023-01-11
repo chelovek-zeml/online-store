@@ -123,6 +123,10 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: tan;
+}
+
 @media (max-width: 900px) {
 
     .header__logo {
