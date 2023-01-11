@@ -6,7 +6,7 @@ export class FilterBlockItem {
     elementWrapper
     checkboxWrapper //
     checkbox
-    constructor(name: string, count: number, id: string) {
+    constructor(name: string, count: number, id: string, flag: string) {
         this.elementWrapper = document.createElement('div')
         this.elementWrapper.className = 'filter__item-category-brand'
         const checkBoxId = id
@@ -18,6 +18,7 @@ export class FilterBlockItem {
 
         this.checkbox.type = 'checkbox'
         this.checkbox.id = id
+        this.checkbox.name = flag;
 
         const text = document.createElement('label')
         text.htmlFor = checkBoxId
@@ -32,9 +33,14 @@ export class FilterBlockItem {
         const onClick = (e: Event) => {
             const { checked } = e.target as HTMLInputElement
             let LS_categories = JSON.parse(localStorage.getItem('categories') || '[]');
-            if (checked) LS_categories.push(name);
+            if (checked && flag === 'category') LS_categories.push(name);
             else LS_categories = LS_categories.filter((LS_cat: string) => LS_cat !== name)
             localStorage.setItem('categories', JSON.stringify(LS_categories))
+
+            let LS_brands = JSON.parse(localStorage.getItem('brands') || '[]');
+            if (checked && flag === 'brand') LS_brands.push(name);
+            else LS_brands = LS_brands.filter((LS_brand: string) => LS_brand !== name)
+            localStorage.setItem('brands', JSON.stringify(LS_brands))
             BlockProducts.filter();
         }
 
