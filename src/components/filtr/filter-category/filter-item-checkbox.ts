@@ -1,4 +1,5 @@
 import BlockProducts from "../../blocks/blockProducts"
+import products from '../../../data.json';
 
 
 export class FilterBlockItem {
@@ -28,10 +29,12 @@ export class FilterBlockItem {
         this.checkboxWrapper.append(this.checkbox, text)
         this.elementWrapper.append(this.checkboxWrapper, countElement)
 
-
         const onClick = (e: Event) => {
             const { checked } = e.target as HTMLInputElement
-            localStorage.setItem(name, String(checked))
+            let LS_categories = JSON.parse(localStorage.getItem('categories') || '[]');
+            if (checked) LS_categories.push(name);
+            else LS_categories = LS_categories.filter((LS_cat: string) => LS_cat !== name)
+            localStorage.setItem('categories', JSON.stringify(LS_categories))
             BlockProducts.filter();
         }
 
