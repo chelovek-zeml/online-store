@@ -4,6 +4,7 @@ import products from '../../data.json';
 
 const getCategoriesFromData = () => {
     const result = products.map(product => product.category)
+    //console.log(result);
     return result;
 }
 
@@ -24,6 +25,7 @@ export class FilterCategoryBlock extends Block {
         this.categoryItemsWrapper.className = 'category_choice'
 
         this.categories = [...new Set(getCategoriesFromData())]
+        console.log(this.categories);
 
         this.categoryItemsWrapper.append(...this.categories.map((cat) => this.renderCategoryItem(cat, cat, 1)))
 
@@ -31,7 +33,7 @@ export class FilterCategoryBlock extends Block {
     }
 
     renderCategoryItem(name: string, id: string, count: number) {
-        return new FilterBlockItem(name, count, id).elementWrapper
+        return new FilterBlockItem(name, count, id, 'category').elementWrapper
     }
 
     render() {

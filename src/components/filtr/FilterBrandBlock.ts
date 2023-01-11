@@ -31,7 +31,7 @@ export class FilterBrandBlock extends Block {
     }
 
     renderBrandItem(name: string, id: string, count: number) {
-        return new FilterBlockItem(name, count, id).elementWrapper
+        return new FilterBlockItem(name, count, id, 'brand').elementWrapper
     }
 
     render() {
