@@ -27,12 +27,9 @@ class BlockProducts extends Block {
       const category = (card as HTMLElement).dataset.category;
       const brand = (card as HTMLElement).dataset.brand;
 
-      if (LS_categories.length) {
+      if (LS_categories.length || LS_brands.length) {
         show = false
         if (LS_categories.includes(category)) show = true
-      }
-      if (LS_brands.length) {
-        show = false
         if (LS_brands.includes(brand)) show = true
       }
 
