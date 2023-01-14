@@ -24,8 +24,7 @@ export class FilterCategoryBlock extends Block {
         this.categoryItemsWrapper = document.createElement('div')
         this.categoryItemsWrapper.className = 'category_choice'
 
-        this.categories = [...new Set(getCategoriesFromData())]
-        console.log(this.categories);
+        this.categories = [...new Set(getCategoriesFromData())];
 
         this.categoryItemsWrapper.append(...this.categories.map((cat) => this.renderCategoryItem(cat, cat, 1)))
 
