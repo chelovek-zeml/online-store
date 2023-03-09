@@ -2,6 +2,7 @@ import './blockProducts.css';
 import Block from '../../core/templates/block';
 import Card from '../card-prduct/cardProduct';
 import products from '../../data.json';
+import { ManagementCards } from '../management-cards/managementCards'; 
 
 class BlockProducts extends Block {
   constructor(id: string, className: string) {
@@ -9,6 +10,7 @@ class BlockProducts extends Block {
   }
 
   render(): HTMLElement {
+    this.container.append((new ManagementCards('management', 'management__cards').render()));
     for (let i = 0; i < products.length; i++) {
       this.container.append(
         new Card(
