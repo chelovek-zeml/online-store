@@ -22,7 +22,7 @@
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 50px;
+    height: auto;
     margin: 5px;
     background: rgb(248, 235, 159);
     border: 2px solid rgb(76, 45, 4);
@@ -32,10 +32,11 @@
 .sort__product {
     position: relative;
     display: inline-block;
+    margin: 4px;
 }
 
 .btn__sort {
-    min-width: 160px;
+    min-width: 180px;
     max-height: 26px;
     margin: 0 0 0 5px;
     border-radius: 15px;
@@ -49,7 +50,7 @@
 .sort__content {
     display: none;
     position: absolute;
-    min-width: 160px;
+    min-width: 180px;
     margin: 0 0 0 5px;
     background: rgb(248, 235, 159);
     border-radius: 0 0 15px 15px;
@@ -75,7 +76,23 @@
     display: block;
 }
 
+.count__product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4px;
+}
+
+#found-count {
+    margin-left: 8px ;
+}
+
 @media (max-width: 900px) {
+
+    .management__cards {
+        flex-direction: column;
+    }
+
     .block__product {
         width: 70%;
     }

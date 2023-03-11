@@ -8,7 +8,7 @@ export class FoundCountCards extends Block {
   }
 
   render(): HTMLElement {
-    this.container.innerHTML = `<h1>Found: <span id='found-count'>0</span></h1>`;
+    this.container.innerHTML = `<h1 class="count__product">Found: <span id='found-count'>0</span></h1>`;
     return this.container;
   }
 
