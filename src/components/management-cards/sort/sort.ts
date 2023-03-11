@@ -9,7 +9,7 @@ export class SortProduct extends Block {
 
   render(): HTMLElement {
     this.container.append(
-      new SortProductBtn("btn-sort", "btn__sort", `Sort options: `).render()
+      new SortProductBtn("btn-sort", "btn__sort", `Sort options: ▼`).render()
     );
     this.container.append(
       new SortContent("sort-content", "sort__content").render()
