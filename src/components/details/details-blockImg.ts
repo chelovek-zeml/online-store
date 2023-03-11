@@ -7,7 +7,7 @@ class DetailsImg extends Block {
     }
 
     render(i: number): HTMLElement {
-        this.container.append((new CardImg('details__img')).render(i));
+        this.container.append((new CardImg('details-img', 'details__img')).render(i));
         return this.container;
       }
     }

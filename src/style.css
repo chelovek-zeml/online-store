@@ -120,6 +120,7 @@ button {
     height: 40px;
     background: rgb(173, 133, 75);
     border-radius: 10px;
+    font-size: 1.3rem;
     cursor: pointer;
 }
 

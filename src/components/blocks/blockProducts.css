@@ -70,6 +70,7 @@
 
 .sort__content p:hover {
     background: tan;
+    border: 1px solid white;
 }
 
 .show {
