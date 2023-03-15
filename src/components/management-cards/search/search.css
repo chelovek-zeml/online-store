@@ -15,15 +15,7 @@
   border: 1px solid rgb(76, 45, 4);
 }
 
-.search__bar button {
-  width: 25px;
-  height: 25px;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-}
-
-.search__bar button img {
+.search__bar img {
   width: 25px;
 }
 
@@ -32,4 +24,8 @@
   background: transparent;
   outline: none;
   border: 0;
+}
+
+.hide {
+  display: none;
 }

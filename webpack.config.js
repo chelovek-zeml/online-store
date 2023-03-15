@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.ts',
@@ -18,13 +19,13 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
     },
     {
-      test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+      test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
       type: 'asset/resource',
   },
     ],
   },
   resolve: {
-    extensions: ['.ts', '.js', '.css', '.json', '.png'],
+    extensions: ['.ts', '.js', '.css', '.json', '.png', '.svg'],
   },
   output: {
     filename: 'script.js',
@@ -38,5 +39,13 @@ module.exports = {
       filename: 'index.html',
     }),
     new CleanWebpackPlugin(),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: 'src/assets',
+          to: 'assets',
+        },
+      ],
+    }),
   ],
 };

@@ -1,19 +1,21 @@
 import Block from "../../../core/templates/block";
 import './search.css';
+import { SearchForm } from "./search-form";
 
 export class Search extends Block {
     constructor() {
-        super("search", "search__container");
-        this.container.innerHTML = `
-          <form class="search__bar">
-            <input type="text" class="search__input" placeholder="Search..."/>
-            <button type="submit" class="search__button">
-             <img src='../src/assets/search.svg'>
-            </button>
-          </form> `;
+        super("search", "search__container");  
     }
 
     render() {
+      this.container.append(new SearchForm().render());
         return this.container;
+    }
+
+    static oninputInfo()  {
+      let input = document.querySelector("search-input") as HTMLElement;
+          input.oninput = function(){
+            console.log("hello");
+          }
     }
 }

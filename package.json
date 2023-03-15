@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
     "html-webpack-plugin": "^5.5.0",
     "ts-loader": "^9.4.2",
     "typescript": "^4.9.4",
@@ -119,7 +120,7 @@
     "url": "git+https://github.com/chelovek-zeml/online-store.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alexey Andreye",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chelovek-zeml/online-store/issues"
