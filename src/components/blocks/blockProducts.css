@@ -92,6 +92,7 @@
 
     .management__cards {
         flex-direction: column;
+        max-height: 160px;
     }
 
     .block__product {
