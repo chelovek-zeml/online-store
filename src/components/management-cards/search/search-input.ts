@@ -8,6 +8,7 @@ export class SearchInput {
     this.container.id = id;
     this.container.setAttribute("type", "text");
     this.container.setAttribute("placeholder", "Search...");
+    this.container.setAttribute("autocomplete", "off");
     this.container.oninput = this.oninputInfo;
   }
 

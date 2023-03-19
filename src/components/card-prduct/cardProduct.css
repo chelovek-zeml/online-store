@@ -54,3 +54,13 @@
     margin-right: 20px;
 }
 
+@media (max-width: 900px) {
+    .card__product {
+        width: 240px;
+    }
+  
+    .card__info {
+        width: 200px; 
+        font-size: 1.3rem;
+    }
+}
