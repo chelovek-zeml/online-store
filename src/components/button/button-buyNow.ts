@@ -12,7 +12,7 @@ class ButtonBuyNow extends Button {
     }
 
     clickButton() {
-        console.log("Buy now")
+        document.getElementById("popup-pay")?.classList.remove("hide")
     }
 
 }

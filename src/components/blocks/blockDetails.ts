@@ -2,8 +2,8 @@ import Block from '../../core/templates/block';
 import './blockDetails.css';
 import DetailsImg from '../details/details-blockImg';
 import DetailsText from '../details/details-blockText';
-import CardButton from '../card-prduct/card-button';
 import { DetailsButton } from '../details/details-button';
+import { PopupFormToPay } from '../form-pay/popup-form-to-pay';
 
 
 class BlockDetails extends Block {
@@ -20,7 +20,7 @@ class BlockDetails extends Block {
     blockTextButton.append(new DetailsButton("details-button", "details__button").render(idElem));
     this.container.append((new DetailsImg('details_block_img', 'details__block__img')).render(idElem - 1));
     this.container.append(blockTextButton);
-    
+    this.container.append(new PopupFormToPay().render())
     
     return this.container;
   }

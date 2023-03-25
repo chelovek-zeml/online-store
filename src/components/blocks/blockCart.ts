@@ -2,6 +2,7 @@ import Block from '../../core/templates/block';
 import './blockCart.css';
 import CartBlockName from '../cart/cart-blockProduct-component/cart-blockName';
 import CartBlockProduct from '../cart/cart-blockProduct-component/cart-blockProduct';
+import { PopupFormToPay } from '../form-pay/popup-form-to-pay';
 
 class BlockCart extends Block {
   cartBlockName = new CartBlockName('id_cart_name', 'cart_block_name');
@@ -22,7 +23,7 @@ class BlockCart extends Block {
         new CartBlockProduct(`${arrTemp[i].id + 'p'}`, 'cart_block_product').render(Number(arrTemp[i].id), i)
       );
     }
-
+    this.container.append(new PopupFormToPay().render())
     return this.container;
   }
 }

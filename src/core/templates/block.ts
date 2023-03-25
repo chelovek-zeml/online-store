@@ -1,4 +1,4 @@
-abstract class Block {
+ class Block {
   protected container: HTMLElement;
 
   constructor(id: string, className: string, category?: string, brand?: string, price?: string, rating?: string) {
