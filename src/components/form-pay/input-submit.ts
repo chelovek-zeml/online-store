@@ -172,7 +172,7 @@ function checkForm() {
   let checkTitle = document.getElementById("check-form");
   for(let i = 1; i < 8; i++) {
     let checkTemp = document.getElementById(`wrapper-input${i}`) as HTMLElement;
-    if (checkTemp!.style.border = "2px solid green") {
+    if (checkTemp!.style.border === "2px solid green") {
       count++;
     }
     if(count === 7) {
