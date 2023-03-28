@@ -10,8 +10,8 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 80%;
-  height:80vh;
+  width: 96%;
+  height: 64vh;
   background: rgb(164, 100, 3);
   border: 2px solid rgb(76, 45, 4);
   border-radius: 24px;
@@ -20,138 +20,205 @@
 
 .details__block__img {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 45%;
+  margin: 5px;
+  width: 64%;
   height: 96%;
+}
+
+.details__add_img {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 30%;
+  margin: 5px;
+}
+
+.add__img {
+  width: 100%;
+  height: 13vh;
+  margin-top: 3px;
+  border-radius: 10px;
+  border: 2px solid rgb(76, 45, 4);
+  cursor: pointer;
+}
+
+.block__text_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 34%;
+  height: 100%;
 }
 
 .details__block__text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 45%;
-  height: 96%; 
+  width: 100%;
+  height: 70%;
+}
+
+.details__button  {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.details__button button {
+  width: 40%;
 }
 
 .details__img {
   width: 100%;
-  height: 36vh;
+  height: 94%;
   border-radius: 12px;
   border: 2px solid rgb(76, 45, 4);
 }
 
 .details__title {
   width: 100%;
-  margin: 10px 0;
+  font-size: 2.0rem;
+  font-weight: 800;
 }
 
 .details__description {
-  font-size: 1.6rem;
-  margin: 10px 0;
+  margin: 2px;
+  font-size: 1.5rem;
 }
 
 .line__details {
   width: 100%;
   height: 1px;
-  margin: 10px 0;
   background: black;
 }
 
 .discount__product {
-  margin: 10px 0;
-  font-size: 2.0rem;
+  margin: 2px;
+  font-size: 1.8rem;
 }
 
 .rating__product {
-  margin: 10px 0;
-  font-size: 2.0rem;
+  margin: 2px;
+  font-size: 1.8rem;
 }
 .stock__product {
-  margin: 10px 0;
-  font-size: 2.0rem;
+  margin: 2px;
+  font-size: 1.8rem;
 }
 
 .brand__product {
-  margin: 10px 0;
-  font-size: 2.6rem;
-  color:blanchedalmond
+  margin: 2px;
+  font-size: 2.0rem;
+  color: blanchedalmond;
 }
 
 .price__product {
-  margin: 10px 0;
-  font-size: 3.0rem;
+  margin: 2px;
+  font-size: 2.4rem;
   font-weight: 800;
-  color:blanchedalmond
+  color: blanchedalmond;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 640px) {
+ 
   .product__details {
-    flex-direction: column;
-    font-size: 2rem;
+   flex-direction: column;
+    width: 90%;
+    height: 80vh;
   }
 
   .details__block__img {
-    width: 90%;
+    
+    width: 96%;
     height: 36%;
+    margin-top: 5px;
   }
 
-  .details__block__text {
+  .details__img{
+    width: 80%;
+  }
+
+  .details__add_img {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
+    margin-top: 5px;
+  }
+
+  .add__img {
+    width: 44%;
+    height: 56px;
+    margin-top: 1px;
+    border-radius: 10px;
+    border: 2px solid rgb(76, 45, 4);
+    cursor: pointer;
+  }
+
+  .block__text_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 90%;
-    height: 40%; 
+    height: 60%;
   }
+}
 
-  .details__img {
-    width: 100%;
-    height: 34vh;
-  }
-
+@media (max-width: 480px) {
   .details__title {
     width: 100%;
-    margin: 6px 0;
+    font-size: 1.8rem;
+    font-weight: 800;
   }
   
   .details__description {
-    font-size: 1.2rem;
-    margin: 4px 0;
+    margin: 1px;
+    font-size: 1.4rem;
   }
   
   .line__details {
     width: 100%;
     height: 1px;
-    margin: 4px 0;
     background: black;
   }
   
   .discount__product {
-    margin: 4px 0;
-    font-size: 1.4rem;
-  }
-  
-  .rating__product {
-    margin: 4px 0;
-    font-size: 1.4rem;
-  }
-  .stock__product {
-    margin: 4px 0;
-    font-size: 1.4rem;
-  }
-  
-  .brand__product {
-    margin: 4px 0;
+    margin: 1px;
     font-size: 1.6rem;
   }
   
+  .rating__product {
+    margin: 1px;
+    font-size: 1.6rem;
+  }
+  .stock__product {
+    margin: 1px;
+    font-size: 1.6rem;
+  }
+  
+  .brand__product {
+    margin: 1px;
+    font-size: 1.8rem;
+    color: blanchedalmond;
+  }
+  
   .price__product {
-    margin: 4px 0;
-    font-size: 2.0rem;
-    font-weight: 600;
+    margin: 1px;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: blanchedalmond;
   }
 }
 
-@media (max-width: 480px) {
-  .details__img {
-    height: 22vh;
+@media (max-width: 400px) {
+  .details__add_img {
+    flex-direction: column;
+    width: 20%;
+  }
+
+  .add__img {
+    width: 80%;
+    height: 32px;
   }
 }

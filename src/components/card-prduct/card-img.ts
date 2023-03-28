@@ -3,9 +3,10 @@ import products from '../../data.json';
 class CardImg {
     protected container: HTMLElement;
 
-    constructor(className: string) {
+    constructor(id: string, className: string) {
         this.container = document.createElement('div');
         this.container.className = className;
+        this.container.id = id;
         
     }
     render(i:number) {

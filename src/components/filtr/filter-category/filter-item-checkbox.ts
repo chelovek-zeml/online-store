@@ -1,6 +1,5 @@
-import BlockProducts from "../../blocks/blockProducts"
-import products from '../../../data.json';
-
+import BlockCards from "../../blocks/block.Cards";
+import { FoundCountCards } from "../../management-cards/count-found/found-cards";
 
 export class FilterBlockItem {
     elementWrapper
@@ -41,7 +40,8 @@ export class FilterBlockItem {
             if (checked && flag === 'brand') LS_brands.push(name);
             else LS_brands = LS_brands.filter((LS_brand: string) => LS_brand !== name)
             localStorage.setItem('brands', JSON.stringify(LS_brands))
-            BlockProducts.filter();
+            BlockCards.filter();
+            FoundCountCards.countProduct();
         }
 
         this.checkbox.addEventListener('click', onClick)

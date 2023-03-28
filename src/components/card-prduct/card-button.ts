@@ -28,7 +28,7 @@ class CardButton extends Block {
         }
          
         let result = 'Add to Cart';
-        if(arrTemp.length > 0) {
+        if(arrTemp !== null) {
         for(let j = 0; j < arrTemp.length; j++) {
           if(i === Number(arrTemp[j].id)) { 
             result = 'Drop from Cart';

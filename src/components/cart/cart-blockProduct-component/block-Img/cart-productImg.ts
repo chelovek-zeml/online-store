@@ -3,7 +3,7 @@ import './cart-productImg.css';
 import CardImg from '../../../card-prduct/card-img';
 
 class CartProductImg extends Block {
-  cartImg = new CardImg('card__img');
+  cartImg = new CardImg('card-img','card__img');
 
   constructor(id: string, className: string) {
     super(id, className);

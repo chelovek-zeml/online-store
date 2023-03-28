@@ -1,0 +1,45 @@
+.wrapper__credit_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 220px;
+  margin: 10px 0;
+  border: 2px solid rgb(76, 45, 4);
+  border-radius: 15px;
+}
+
+.title__credit_card {
+  margin-top: 5px;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.block__date_cvv {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+}
+
+#wrapper-input6 {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  height: 30px;
+  margin: 1px;
+  background-color: rgb(247, 237, 175);
+  border: 2px solid rgb(76, 45, 4);
+  border-radius: 15px;
+}
+
+#wrapper-input7 {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  height: 30px;
+  margin: 1px;
+  background-color: rgb(247, 237, 175);
+  border: 2px solid rgb(76, 45, 4);
+  border-radius: 15px;
+}

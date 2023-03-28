@@ -78,8 +78,7 @@ class IncreaseDeacreaseProduct {
       images: string[];
     }[] = JSON.parse(localStorage.getItem('arrProduct')!);
     if (fieldCount?.textContent === '1') {
-      let productDelet = document.getElementById(`${el}p`)!;
-      console.log(el);
+      let productDelet = document.getElementById(`p${el}`)!;
       productDelet.style.display = 'none';
       ButtonAddToCart.creatArrCart(Number(el), false);
       IncreaseDeacreaseProduct.changeContextPriceSymmary();
