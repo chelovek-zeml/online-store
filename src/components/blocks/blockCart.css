@@ -1,64 +1,185 @@
 .cart__page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
-    height:auto;
-    margin: 10px;
-    background: rgb(248, 235, 159);
-    border: 2px solid rgb(76, 45, 4);
-    border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: auto;
+  margin: 10px;
+  background: rgb(248, 235, 159);
+  border: 2px solid rgb(76, 45, 4);
+  border-radius: 40px;
 }
 
 #cart-page {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-  }
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
 
 .cart_block_product {
-    display: flex;
-    width: 100%;
-    height: 150px;
-    background: rgb(248, 235, 159);
-    border-bottom: 2px solid rgb(76, 45, 4);
-    border-radius: 0 0 30px 30px;
-    overflow: hidden;
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background: rgb(248, 235, 159);
+  border-bottom: 2px solid rgb(76, 45, 4);
+  border-radius: 0 0 30px 30px;
+  overflow: hidden;
 }
 
 .cart_block_name {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 40px;
-    background: rgb(173, 133, 75);
-    border-top: 2px solid rgb(76, 45, 4);
-    border-bottom: 2px solid rgb(76, 45, 4);
-    border-radius: 30px 30px 0 0;
-    overflow: hidden;
-    font-size: 2.4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background: rgb(173, 133, 75);
+  border-top: 2px solid rgb(76, 45, 4);
+  border-bottom: 2px solid rgb(76, 45, 4);
+  border-radius: 30px 30px 0 0;
+  overflow: hidden;
+  font-size: 2.4rem;
+}
+
+.block__cart_pagination {
+  display: flex;
+  width: 60%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.cart__limit_pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+.cart__limit_text {
+  font-size: 2.4rem;
+}
+.count__limit_pagination {
+  width: 54px;
+  height: 32px;
+  margin-left: 4px;
+  padding-left: 3px;
+  outline: none;
+  border: 2px solid rgb(76, 45, 4);
+  border-radius: 4px;
+  background: rgb(248, 235, 159);
+  font-size: 2.6rem;
+}
+.manager__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+}
+.manager__text_pagination {
+  margin-right: 10px;
+  font-size: 2.4rem;
+}
+.manager__count_pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 32px;
+  margin: 0 10px;
+  background: #f8eb9f;
+  border: 2px solid #4c2d04;
+  border-radius: 4px;
+  font-size: 2.6rem;
+}
+.manager__prev_pagination {
+  width: 20px;
+  height: 34px;
+  margin: 0 10px;
+  background: url("../../assets/VectorBack.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.manager__next_pagination {
+  width: 20px;
+  height: 34px;
+  margin: 0 10px;
+  background: url("../../assets/VectorNext.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 @media (max-width: 900px) {
-    .cart__page {
-        width: 90%;
-    }
+  .cart__page {
+    width: 90%;
+  }
 
-    #cart-page {
-        flex-direction: column;
-        align-items: center;
-      }
+  #cart-page {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .cart_block_product {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: auto;
-    }
+  .cart_block_product {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 640px) {
+  .cart_block_name {
+    flex-direction: column;
+    height: 80px;
+  }
+
+  .block__cart_pagination {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+  }
 }
 
+@media (max-width: 400px) {
+  .cart__limit_text {
+    font-size: 2.0rem;
+  }
 
+  .count__limit_pagination {
+    width: 54px;
+    height: 32px;
+    margin-left: 4px;
+    padding-left: 3px;
+    font-size: 2.0rem;
+  }
+
+  .manager__text_pagination {
+    margin-right: 4px;
+    font-size: 2.0rem;
+  }
+  .manager__count_pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 32px;
+    margin: 0 4px;
+  
+  }
+  .manager__prev_pagination {
+    width: 20px;
+    height: 34px;
+    margin: 0 4px;
+ 
+  }
+  .manager__next_pagination {
+    width: 20px;
+    height: 34px;
+    margin: 0 4px;
+  
+  }
+}
