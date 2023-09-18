@@ -1,0 +1,39 @@
+.view__block_cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    margin: 4px;
+}
+
+.view__cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40px;
+    height: 40px;
+    background: rgb(173, 133, 75);
+    border-radius: 5px;
+    border: 2px solid rgb(76, 45, 4);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.view__cards:hover {
+    background: tan;
+    border: 2px solid white;
+}
+
+.view__round_big {
+    width: 7px;
+    height: 7px;
+    margin: 1px;
+    background: rgb(76, 45, 4);
+}
+
+.view__round_small {
+    width: 4px;
+    height: 4px;
+    margin: 1px;
+    background: rgb(76, 45, 4);
+}
